@@ -1,0 +1,27 @@
+@HostAddress = http://localhost:5157
+
+GET {{HostAddress}}/users/
+Accept: application/json
+
+###
+POST {{HostAddress}}/users/
+Content-Type: application/json
+
+{
+    "userId": "1902c6a2-7549-4eb5-bcb1-29be91d4a74e",
+    "firstName": "111",
+    "lastName": "2222"
+}
+
+###
+PUT {{HostAddress}}/users/6902c6a2-7549-4eb5-bcb1-29be91d4a74e
+Content-Type: application/json
+
+{
+    "userId": "6902c6a2-7549-4eb5-bcb1-29be91d4a74e",
+    "firstName": "Ottorino",
+    "lastName": "Bruni"
+}
+
+###
+DELETE {{HostAddress}}/users/5fa85f64-5717-4562-b3fc-2c963f66afa6
