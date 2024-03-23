@@ -13,7 +13,7 @@ This repository contains the source code for the WebApiDemo project. The goal of
 
 ## Project Description
 
-WebApiDemo showcases the development of a RESTful API using ASP.NET Core minimal APIs. The repository includes projects like `WebApiDemo.Models` and `WebApiDemo`, illustrating the implementation of CRUD operations for managing user data. 
+WebApiDemo showcases the development of a RESTful API using ASP.NET Core minimal APIs. The repository includes project `WebApiDemo`, illustrating the implementation of CRUD operations for managing user data. 
 
 ## How to Use
 
