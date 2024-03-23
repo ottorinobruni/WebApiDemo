@@ -1,27 +1,34 @@
 @HostAddress = http://localhost:5157
 
+# Retrieves all users.
 GET {{HostAddress}}/users/
 Accept: application/json
 
 ###
+
+# Adds a new user 
 POST {{HostAddress}}/users/
 Content-Type: application/json
 
 {
     "userId": "1902c6a2-7549-4eb5-bcb1-29be91d4a74e",
-    "firstName": "111",
-    "lastName": "2222"
+    "firstName": "Master",
+    "lastName": "Yoda"
 }
 
 ###
-PUT {{HostAddress}}/users/6902c6a2-7549-4eb5-bcb1-29be91d4a74e
+
+# Updates an existing user
+PUT {{HostAddress}}/users/87d713b2-ffcf-4ba0-b5ba-3de1109a642c
 Content-Type: application/json
 
 {
-    "userId": "6902c6a2-7549-4eb5-bcb1-29be91d4a74e",
-    "firstName": "Ottorino",
-    "lastName": "Bruni"
+    "userId": "87d713b2-ffcf-4ba0-b5ba-3de1109a642c",
+    "firstName": "Darth",
+    "lastName": "Vader"
 }
 
 ###
-DELETE {{HostAddress}}/users/5fa85f64-5717-4562-b3fc-2c963f66afa6
+
+# Deletes a user
+DELETE {{HostAddress}}/users/1902c6a2-7549-4eb5-bcb1-29be91d4a74e

@@ -4,9 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 List<User> users = new()
 {
-    new(){ UserId = Guid.NewGuid(), FirstName = "Ottorino", LastName = "Bruni" },
-    new(){ UserId = Guid.NewGuid(), FirstName = "Luke", LastName = "Skywalker" },
-    new(){ UserId = Guid.NewGuid(), FirstName = "Anakin", LastName = "Skywalker" }
+    new(){ UserId = Guid.Parse("c5eb988c-aa12-40ed-838b-6ff34370b8b4"), FirstName = "Ottorino", LastName = "Bruni" },
+    new(){ UserId = Guid.Parse("50f6228e-e7cf-4ef6-a9a7-fd455f491dc4"), FirstName = "Luke", LastName = "Skywalker" },
+    new(){ UserId = Guid.Parse("87d713b2-ffcf-4ba0-b5ba-3de1109a642c"), FirstName = "Anakin", LastName = "Skywalker" }
 };
 
 // Add services to the container.
@@ -29,7 +29,7 @@ app.MapGet("Users",  () => users);
 app.MapPost("Users",  (User user) => users.Add(user));
 app.MapPut("Users/{id}", (Guid id, User inputUser) => 
 {
-    var user = users.Where( u => u.UserId == id).FirstOrDefault();
+    var user = users.FirstOrDefault(u => u.UserId == id);
 
     if (user is null)
     {
