@@ -13,11 +13,12 @@ This repository contains the source code for the WebApiDemo project. The goal of
 
 ## Project Description
 
-WebApiDemo showcases the development of a RESTful API using ASP.NET Core minimal APIs. The repository includes project `WebApiDemo`, illustrating the implementation of CRUD operations for managing user data. 
+WebApiDemo showcases the development of a RESTful API using ASP.NET Core minimal APIs. The repository includes project `WebApiDemo`, illustrating the implementation of CRUD operations for managing user data. Additionally, the project includes an `.http` file for testing the API endpoints directly within Visual Studio.
 
 ## How to Use
 
 - **WebApiDemo:** Implements the minimal API for handling CRUD operations.
+- **WebApiDemo.http:** Provides a file for testing API endpoints using the Visual Studio .http file editor.
 
 ## Project Structure
 
